@@ -1,4 +1,5 @@
 ## About
+
 I was learning about the Rat in Maze problem on competitive coding platforms that is solved with recursion and backtracking.
 
 Then I thought it would be fun if we could visualize it happening in front of our eyes.
@@ -9,9 +10,13 @@ That's why I wrote this program.
 
 This program will help visualize the Rat In Maze problem just through command prompt and by live changes in matrix.
 
-## Visualization 
+## Visualization
 
-Here is a video of the program in actions!
+- This is the maze that the rat will traverse in this input
+
+![RatInMaze](https://github.com/Aliqyan-21/Rat-In-Maze/assets/117648906/dc804921-275d-48f0-950a-d6f26b32d814)
+
+- Here is the video of the Rat in action!
 
 [Video](https://github.com/Aliqyan-21/Rat-In-Maze/assets/117648906/aff416f2-5091-4cc3-a513-195ff511ab4b)
 
@@ -36,6 +41,7 @@ Compile it
 ```bash
 	gcc main.cpp -o main
 ```
+
 Run it
 
 ```bash
@@ -51,3 +57,4 @@ Run it
 Enjoy! 😋
 
 ~ @aliqyan21
+
