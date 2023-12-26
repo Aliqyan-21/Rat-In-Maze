@@ -28,8 +28,16 @@ int main(){
 
   findPath(n, mat, x, y, visited, path, ans);
 
+  if(ans.size()>1) cout << "All path that are found are: " << endl;
+  else cout << "One and only path that is found is: " << endl;
   for(string i : ans){
-    cout << i << endl;
+    int tmp = i.size();
+    for(int j=0; j<tmp; j++){
+      cout << i[j];
+      if(j<tmp-1)
+      cout << " -> ";
+    }
+    cout << endl;
   }
 
   return 0;
