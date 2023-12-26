@@ -3,8 +3,10 @@
 
 #include <iostream>
 #include <vector>
+#include <unistd.h>
 using namespace std;
 
+int i = 1;
 inline bool isSafe(int n, int x, int y, vector<vector<int>> mat, vector<vector<int>> visited){
   // three conditions we have check for
   // 1. inside the matrix
@@ -14,8 +16,20 @@ inline bool isSafe(int n, int x, int y, vector<vector<int>> mat, vector<vector<i
 }
 
 void findPath(int n, vector<vector<int>> mat, int x, int y, vector<vector<int>> visited, string path, vector<string> &ans){
+  sleep(1);
+  system("clear");
+  for(auto i : visited){
+    for(int j : i){
+      usleep(200);
+      cout << j << " ";
+    }
+    cout << endl;
+  }
+
   // base case
   if(x == n-1 && y == n-1){
+    cout << i << " Path Found!" << endl;
+    i++;
     ans.push_back(path);
     return;
   }
