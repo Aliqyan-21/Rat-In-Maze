@@ -20,7 +20,7 @@ void findPath(int n, vector<vector<int>> mat, int x, int y, vector<vector<int>> 
   system("clear");
   for(auto i : visited){
     for(int j : i){
-      usleep(200);
+      // usleep(50);
       cout << j << " ";
     }
     cout << endl;
@@ -44,6 +44,7 @@ void findPath(int n, vector<vector<int>> mat, int x, int y, vector<vector<int>> 
   if(isSafe(n, newx, newy, mat, visited)){
     path.push_back('D');
     findPath(n, mat, newx, newy, visited, path, ans);
+    //backtracking
     path.pop_back();
   }
 
@@ -53,6 +54,7 @@ void findPath(int n, vector<vector<int>> mat, int x, int y, vector<vector<int>> 
   if(isSafe(n, newx, newy, mat, visited)){
     path.push_back('L');
     findPath(n, mat, newx, newy, visited, path, ans);
+    //backtracking
     path.pop_back();
   }
 
@@ -62,6 +64,7 @@ void findPath(int n, vector<vector<int>> mat, int x, int y, vector<vector<int>> 
   if(isSafe(n, newx, newy, mat, visited)){
     path.push_back('R');
     findPath(n, mat, newx, newy, visited, path, ans);
+    //backtracking
     path.pop_back();
   }
 
@@ -71,6 +74,7 @@ void findPath(int n, vector<vector<int>> mat, int x, int y, vector<vector<int>> 
   if(isSafe(n, newx, newy, mat, visited)){
     path.push_back('U');
     findPath(n, mat, newx, newy, visited, path, ans);
+    //backtracking
     path.pop_back();
   }
 
